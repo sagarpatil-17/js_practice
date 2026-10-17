@@ -11,7 +11,7 @@ Most of the fundamental scripts here run directly in the terminal using Node.js,
 ### Running Node.js Scripts Locally
 1. Clone this repository:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/sagarpatil-17/js_practice.git
    ```
 2. Navigate into the project folder:
    ```bash
