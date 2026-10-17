@@ -4,7 +4,7 @@ Welcome to my personal JavaScript learning repository! This is a dedicated space
 
 The goal of this repo is to serve as a living documentation of my growth and a quick-reference guide for my future self.
 
-## ⚙️ Environment & Setup
+## Environment & Setup
 
 Most of the fundamental scripts here run directly in the terminal using Node.js, while UI exercises run right in the browser.
 
