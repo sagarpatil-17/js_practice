@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+
+    <style>
+        body {
+            background-color: #252525;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="heading" class="heading">Learning DOM</h1>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error illum harum suscipit
+            sapiente officiis ut nobis, a est repellendus fugit earum assumenda, facere laudantium. Maxime
+            quisquam laborum?</p>
+        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, maiores?</p>
+        <h6 id="counter"></h6>
+        <button id="btn1">-</button>
+        <button id="btn2">+</button>
+    </div>
+</body>
+
+<script>
+    let count = 0;
+    let counter = document.getElementById('counter');
+
+    counter.innerText = count;
+    counter.style.fontSize = '32px';
+
+    let updateDisplayCount = () => {
+        counter.innerText = count;
+    }
+
+    document.getElementById('btn1').addEventListener('click', () => {
+        count--;
+        updateDisplayCount()
+    });
+
+    document.getElementById('btn2').addEventListener('click', () => {
+        count++;
+        updateDisplayCount()
+    });
+
+
+    for (let i = 0; i <= 100; i++) {
+        setTimeout(() => {
+            counter.innerText = i
+        }, i * 1000)
+
+        if (i === 10) {
+            break
+        }
+    }
+</script>
+
+</html>
