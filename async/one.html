@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Async Javascript</h1>
+    <button id="click">Click Here!</button>
+
+    <script>
+        const sayHi = () => {
+            console.log('Hi!');
+        }
+
+        const changeText = () => {
+            document.querySelector('h1').innerHTML = 'Hey World!'
+        }
+
+        const updateTime = setTimeout(changeText, 3000)
+
+        document.querySelector('#click').addEventListener('click', ()=>{
+            clearTimeout(updateTime)
+        })
+
+    </script>
+</body>
+
+</html>
